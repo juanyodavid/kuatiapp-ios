@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qlr-sg-pE0">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lecturas guardadas-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="listaFilesID" id="Y6W-OH-hqX" customClass="listaFilesVC" customModule="Kuatiapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9fU-UN-iGl">
+                                <rect key="frame" x="0.0" y="126" width="834" height="1048"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="5xX-qJ-ZCf">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5EG-nB-b7j">
+                                <rect key="frame" x="0.0" y="1116" width="834" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="13c-CU-OC7"/>
+                                    <barButtonItem title="Item" image="trash.fill" catalog="system" id="G6Q-39-cij"/>
+                                    <barButtonItem title="Item" image="square.and.arrow.up.circle.fill" catalog="system" id="P4R-JQ-bWq">
+                                        <connections>
+                                            <action selector="shareButton:" destination="Y6W-OH-hqX" id="QGr-Cq-3eU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9fU-UN-iGl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0Eo-qO-nW0"/>
+                            <constraint firstItem="5xX-qJ-ZCf" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="UhM-bK-Qs7"/>
+                            <constraint firstItem="5xX-qJ-ZCf" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="Uuf-uX-sQI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9fU-UN-iGl" secondAttribute="trailing" id="XBC-6r-p33"/>
+                            <constraint firstItem="5xX-qJ-ZCf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fMC-OE-mJG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9fU-UN-iGl" secondAttribute="bottom" id="lTf-cG-LC2"/>
+                            <constraint firstItem="9fU-UN-iGl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="pl8-9D-aTf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5xX-qJ-ZCf" secondAttribute="trailing" id="rAg-pC-H4D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lecturas guardadas" id="WvA-HX-8mQ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="TA5-CV-cRg">
+                            <connections>
+                                <action selector="shareButton:" destination="Y6W-OH-hqX" id="aym-iG-0P4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ListaTableView" destination="9fU-UN-iGl" id="jVr-jF-2yS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="23.4375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dtT-bV-RPt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qlr-sg-pE0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="B11-4W-ToT">
+                        <rect key="frame" x="0.0" y="24" width="834" height="102"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="DmO-n8-tzG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jig-96-pKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="23.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fondo" width="1500" height="1173"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

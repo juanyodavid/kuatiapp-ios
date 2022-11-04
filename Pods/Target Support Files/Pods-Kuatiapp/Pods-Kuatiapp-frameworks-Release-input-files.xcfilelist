@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-Kuatiapp/Pods-Kuatiapp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework
+${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework
+${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
+${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework
+${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/Simple-Networking/Simple_Networking.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

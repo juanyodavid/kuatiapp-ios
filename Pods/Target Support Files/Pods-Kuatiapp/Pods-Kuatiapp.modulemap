@@ -1,0 +1,6 @@
+framework module Pods_Kuatiapp {
+  umbrella header "Pods-Kuatiapp-umbrella.h"
+
+  export *
+  module * { export * }
+}

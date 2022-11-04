@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NKD-oD-oCZ">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PesajeVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="listaPesajeID" id="Y6W-OH-hqX" customClass="pesajeVC" customModule="Kuatiapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SJr-wm-V2x">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="99D-0M-Z5o">
+                                <rect key="frame" x="0.0" y="74" width="1024" height="1162"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="Aqo-GW-ide">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0vO-9p-Rlj">
+                                <rect key="frame" x="0.0" y="-6" width="1024" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNR-Pb-EOe">
+                                        <rect key="frame" x="444" y="0.0" width="136" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eov-SA-BqY">
+                                        <rect key="frame" x="501.5" y="47.5" width="21.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="NuK-CK-gBt" userLabel="Stack View down">
+                                <rect key="frame" x="10" y="1246" width="1004" height="50"/>
+                                <subviews>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY7-8v-fPd">
+                                        <rect key="frame" x="0.0" y="0.0" width="499" height="50"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Parar lectura">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="pararLecturaButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TRG-p9-1Bx"/>
+                                        </connections>
+                                    </button>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6e7-F8-4sf">
+                                        <rect key="frame" x="505" y="0.0" width="499" height="50"/>
+                                        <color key="tintColor" red="0.30556380189999999" green="0.58651045729999995" blue="0.51381967289999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Continuar lectura">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="continuarLecturaButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="09m-YK-JIs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c89-cU-A7c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Aqo-GW-ide" firstAttribute="leading" secondItem="SJr-wm-V2x" secondAttribute="leading" id="6J7-KO-WDZ"/>
+                            <constraint firstItem="Aqo-GW-ide" firstAttribute="bottom" secondItem="SJr-wm-V2x" secondAttribute="bottom" id="Bbu-M2-qyQ"/>
+                            <constraint firstItem="NuK-CK-gBt" firstAttribute="leading" secondItem="c89-cU-A7c" secondAttribute="leading" constant="10" id="Bhd-lT-nEo"/>
+                            <constraint firstItem="99D-0M-Z5o" firstAttribute="top" secondItem="0vO-9p-Rlj" secondAttribute="bottom" id="IN0-4h-qKq"/>
+                            <constraint firstAttribute="trailing" secondItem="0vO-9p-Rlj" secondAttribute="trailing" id="JOU-yz-y35"/>
+                            <constraint firstItem="NuK-CK-gBt" firstAttribute="top" secondItem="99D-0M-Z5o" secondAttribute="bottom" constant="10" id="P39-FY-QZU"/>
+                            <constraint firstItem="Aqo-GW-ide" firstAttribute="top" secondItem="SJr-wm-V2x" secondAttribute="top" id="RLb-Wa-kLq"/>
+                            <constraint firstItem="c89-cU-A7c" firstAttribute="trailing" secondItem="99D-0M-Z5o" secondAttribute="trailing" id="bk7-9O-4BJ"/>
+                            <constraint firstItem="c89-cU-A7c" firstAttribute="bottom" secondItem="NuK-CK-gBt" secondAttribute="bottom" id="eD7-Ju-xlq"/>
+                            <constraint firstItem="0vO-9p-Rlj" firstAttribute="bottom" secondItem="c89-cU-A7c" secondAttribute="top" id="jad-6n-D1p"/>
+                            <constraint firstItem="c89-cU-A7c" firstAttribute="trailing" secondItem="NuK-CK-gBt" secondAttribute="trailing" constant="10" id="jdy-9w-Rwu"/>
+                            <constraint firstItem="99D-0M-Z5o" firstAttribute="leading" secondItem="c89-cU-A7c" secondAttribute="leading" id="lYh-aG-qaP"/>
+                            <constraint firstItem="Aqo-GW-ide" firstAttribute="trailing" secondItem="SJr-wm-V2x" secondAttribute="trailing" id="vJc-OZ-KUb"/>
+                            <constraint firstItem="NuK-CK-gBt" firstAttribute="centerX" secondItem="SJr-wm-V2x" secondAttribute="centerX" id="wTM-oh-sHk"/>
+                            <constraint firstItem="0vO-9p-Rlj" firstAttribute="leading" secondItem="SJr-wm-V2x" secondAttribute="leading" id="zzJ-bx-Ltp"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ec1-49-Dlv">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="square.and.arrow.down.on.square.fill" catalog="system" style="plain" id="cf9-qe-fQW">
+                                <connections>
+                                    <action selector="writeDownButton:" destination="Y6W-OH-hqX" id="2xM-IT-6fY"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="1.square.fill" catalog="system" style="plain" id="enh-jQ-rpN">
+                                <connections>
+                                    <action selector="singleCaravanaButton:" destination="Y6W-OH-hqX" id="6qn-cX-jzc"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="CaravanasTableView" destination="99D-0M-Z5o" id="mBL-Ji-Vrv"/>
+                        <outlet property="ipLabel" destination="eov-SA-BqY" id="ccf-cA-qFD"/>
+                        <outlet property="nameLabel" destination="KNR-Pb-EOe" id="4Hk-jc-cGs"/>
+                        <outlet property="singleCaravanaButton" destination="enh-jQ-rpN" id="XNg-g0-G8W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="16.741071428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xaG-CO-Nbg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NKD-oD-oCZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ogO-cj-vGG">
+                        <rect key="frame" x="0.0" y="24" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="MLQ-SI-p2v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hP3-sN-cHh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="16.741071428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.square.fill" catalog="system" width="128" height="114"/>
+        <image name="fondo" width="1500" height="1173"/>
+        <image name="square.and.arrow.down.on.square.fill" catalog="system" width="122" height="128"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

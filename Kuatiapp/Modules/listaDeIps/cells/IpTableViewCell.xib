@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <accessibilityOverrides isEnabled="YES" dynamicTypePreference="2"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="IpTableViewCell" customModule="Kuatiapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="428" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="externaldrive.fill.badge.wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5ja-DO-elK">
+                        <rect key="frame" x="19" y="16.5" width="41" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="d9X-g0-OHe"/>
+                            <constraint firstAttribute="height" constant="40.5" id="wEC-an-1Wd"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7zX-C5-eNc">
+                        <rect key="frame" x="68" y="10" width="89" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chd-ce-PoM">
+                                <rect key="frame" x="0.0" y="0.0" width="89" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion Ip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUg-HE-ehh">
+                                <rect key="frame" x="0.0" y="20.5" width="89" height="28.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5ja-DO-elK" firstAttribute="centerY" secondItem="7zX-C5-eNc" secondAttribute="centerY" id="09m-0c-h4K"/>
+                    <constraint firstAttribute="bottom" secondItem="7zX-C5-eNc" secondAttribute="bottom" constant="10" id="GzU-BJ-6CO"/>
+                    <constraint firstItem="7zX-C5-eNc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="HJM-94-N64"/>
+                    <constraint firstItem="7zX-C5-eNc" firstAttribute="leading" secondItem="5ja-DO-elK" secondAttribute="trailing" constant="8" symbolic="YES" id="dJn-WG-56A"/>
+                    <constraint firstItem="5ja-DO-elK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="jEZ-fp-8eb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="directionLabel" destination="uUg-HE-ehh" id="MPz-oz-icV"/>
+                <outlet property="nameLabel" destination="Chd-ce-PoM" id="MeY-xM-vhD"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="-55.915178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="externaldrive.fill.badge.wifi" catalog="system" width="128" height="86"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
